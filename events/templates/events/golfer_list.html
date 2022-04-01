@@ -1,0 +1,44 @@
+{% extends 'events/base.html' %}
+{% block content %}
+  
+
+
+    <h1>Stableford League</h1>
+    
+
+   
+
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">name</th>
+      <th scope="col">First</th>
+      <th scope="col">second</th>
+      <th scope="col">Third</th>
+      <th scope="col">Fourth</th>
+      <th scope="col">Fifth</th>
+      <th scope="col">Total</th>
+
+    </tr>
+  </thead>
+  <tbody>
+
+    {% for i in score_list %}
+    <tr>
+      <th scope="row">{{ i.name }}</th>
+      <td>{{ i.score1 }}</td>
+      <td>{{ i.score2 }}</td>
+      <td>{{ i.score3 }}</td>
+      <td>{{ i.score4 }}</td>
+      <td>{{ i.score5 }}</td>
+      <td>{{ i.total_score }}</td>
+
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+
+   
+     
+{%  endblock %}

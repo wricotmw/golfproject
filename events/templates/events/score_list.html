@@ -1,0 +1,18 @@
+{% extends 'events/base.html' %}
+{% block content %}
+  <center>
+
+
+{% for score in score_list %} 
+    {{ score.name }} {{ score }}
+
+    <br>
+{% endfor %}
+   
+
+
+
+ 
+ 
+  </center>
+{%  endblock %}
