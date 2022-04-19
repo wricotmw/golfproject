@@ -73,7 +73,7 @@ def add_scores(request):
 
 
 def all_scores(request):
-	score_list = Scores.objects.all().order_by('name')
+	score_list = Scores.objects.all().order_by('score_date')
 
 	return render(request, 'events/score_list.html', {
 		'score_list':score_list

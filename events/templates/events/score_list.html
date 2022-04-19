@@ -3,8 +3,9 @@
   <center>
 
 
-{% for score in score_list %} 
-    {{ score.name }} {{ score }}
+{% for x in score_list %} 
+    
+    {{ x.score_date }} {{ x.name }} {{ x.score }}<br>
 
     <br>
 {% endfor %}
