@@ -10,7 +10,7 @@ class ScoreDate(models.Model):
 
 
 class Golfer(models.Model):
-	name = models.CharField('name', max_length=120)
+	name = models.CharField('name', max_length=120, unique = True)
 
 	def __str__(self):
 		return self.name
